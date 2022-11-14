@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>InMariland Apoiadores</title>
+
+    <link rel="stylesheet" href="style.css" />
+    
+     </head>
+
+                           <!--BODY-->
+    
+  <body class="light-theme" aria-label="O site está utilizando o tema light" role="body">
+    <header aria-label="Cabeçalho da página.">
+      
+                          <!--BOTÃO DARK MODE-->
+
+   <div class="header-content">    
+ <button id="switch-theme-button" onclick="switchTheme()">Inverter Mundos</button>
+         
+     
+       <img class="invert-element" src="./assets/LogoInMariland.png" alt="Logo InMariland" />
+        <p  role="text">
+          Olá, bem vindes ao meu MUNDO! <span>@InMariland</span> é um lugar confortável onde todas as nossas ideias são possíveis e criam vida.
+            Trabalho customizando bonecas a quase 2 anos e desde então tem sido minha única fonte de renda e forma de expressar minhas ideias.
+            Sou uma mulher trans negra e mãe de uma menina e atrávés do seu apoio vou poder realizar meu sonho e dar continuidade ao meu projeto de ter minha própria linha de bonecas. Seu apoio é crucial para ajudar a continuar esse projeto que realizo, através de bonecas velhas crio personagens e criaturas o que chamo de habitantes que precisam do seu apoio para para continuar popularizando a Mariland!!
+        </p>
+       
+      </div>
+
+      <div id="top-characters" class=""></div>
+    </header>
+
+    <main>
+      <div id="bottom-characters" class="world-characters"></div>
+
+      <section id="section-inverted-world" class="container">
+        <div class="section-texts">
+            
+                          <!--CONTEÚDO APOIADOR-->
+            
+          <h1>Conteúdo para os apoiadores</h1>
+          <p role="text">  -Grupo no whatsapp</p>
+       <p role="text"> -Mini cursos </p>
+            <p role="text">-Spoilers</p>
+            <p role="text">-Reviews</p>
+            <p role="text">-Processo criativo</p>
+        </div>
+          <img class="draculaura" src="./assets/draculaura.png">
+
+      </section>
+
+      <section id="inmariland-trailer" class="container">
+          
+                             <!-- YOUTUBE -->
+          
+          
+        <div class="video-frame" aria-hidden="true">  
+            <iframe class="video-frame" width="560" height="315" src="https://www.youtube.com/embed/zx6_wSw-fUs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+          
+                            <!--PLANOS APOIADORES-->
+          
+        <div class="section-texts">
+            
+            <h2>Planos</h2>
+          <p role="text">
+        Nível básico - Grupo no whatsapp com conteúdos exclusivos. Por apenas R$10,00
+          </p>
+            <p role="text">Nível médio - Grupo no whatsapp com conteúdos exclusivos e mimos mensais. Por apenas R$30,00
+          <p role="text">Nível Super fã - Grupo no whatsapp com conteúdos exclusivos, mimos mensais e customizações surpresas.Por apenas R$120,00</p>
+            </div>
+      </section>
+
+                  <!--EXEMPLOS DE CUSTOMIZAÇÕES RECENTES-->
+        
+      <section id="inmariland-galeria">
+        <div class="container section-text">
+          <h2>Uma das melhores customizadoras do Brasil</h2>
+          <ul class="gallery-container" role="gallery">
+            <li class="gallery-image">
+              <img class="fotos" src="./assets/imagem1.jpg" alt="Customizações de figurantes" />
+            </li>
+            <li class="gallery-image">
+              <img class="fotos" src="./assets/imagem2.jpg" alt="casamento de lydia" />
+            </li>
+            <li class="gallery-image">
+              <img class="fotos" src="./assets/imagem3.jpg" alt="Casal shadow" />
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="section-form" class="container">
+        
+          
+                         <!--FORMULÁRIO DE INSCRIÇÃO-->
+          
+          
+        <div class="form-content">
+          <h3>Entre para o Grupo de apoiadores e tenha experiências de <span>outro mundo<span></span> </h3>
+            </h3></div></section>              
+                            
+              <form class="formulario">
+    <div class="form">
+  <label for="name">Nome Completo</label><br>
+  <input type="text" name="name" value="Joana Maria da Silva" id="txtName"><br>
+  
+<label for="whatsapp">ZipZop</label><br>
+  <input type="number" name="whatsapp" value="81912345678" id="txtZipzop"><br>
+      
+  <label for="planos">Qual Plano do seu interesse?</label>
+      <p class="social2"><select class="social" id="txtPlanos">
+          <option value="Basico">Basica</option>
+      <option value="Media">Média</option>
+      <option value="Super-fa">Super Fã</option>
+        </select></p>
+        <button type="button" id="btnSubscribe">Me Inscrever</button>
+        
+    </div>
+        </form> 
+   
+    </main>
+
+                <!--FINAL DA PÁGINA-->
+          <img class="nuvem" src="./assets/nuvens_Dark_mod.png">
+    <footer>
+      
+      <p>
+        Obrigada pela sua visita!
+      </p>
+     
+    </footer>
+    
+    <script type="module" src=""></script>
+    <script>
+      function switchTheme() {
+          document.body.classList.toggle('dark-theme');
+          document.body.classList.toggle('light-theme');
+      }
+    </script>
+  <script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.9.3/firebase-app.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  const firebaseConfig = {
+    apiKey: "AIzaSyDtZNJ-5jU-NODCiFZVB7RDFnDKWNyECN4",
+    authDomain: "apoia-se-3751c.firebaseapp.com",
+    projectId: "apoia-se-3751c",
+    storageBucket: "apoia-se-3751c.appspot.com",
+    messagingSenderId: "762515593652",
+    appId: "1:762515593652:web:5256fd30d46c625c4ffae1"
+  };
+
+                    //Apoia-se,js
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+
+  const txtName = document.getElementById('txtName')
+  const txtZipzop = document.getElementById('txtZipzop')
+  const txtPlanos = document.getElementById('txtPlanos')
+
+  const btnSubscribe = document.getElementById('btnSubscribe')
+  
+  btnSubscribe.addEventListener('click', ()=> {
+  const subscription = {
+    name: txtName.value,
+    zipzop: txtZipzop.value,
+    planos: txtPlanos.value
+  } 
+
+      alert ('Obrigada por se inscrever, entrarei em contato em breve!')
+
+    //salvar no banco de dados!
+  subscribeinitializeApp(subscription)
+    })
+
+                        //clube.js
+
+
+  import { getFirestore, collection, addDoc } from 'https://www.gstatic.com/firebasejs/9.9.3/firebase-firestore.js'
+
+  export async function subscribeinitializeApp(subscription) {
+    const db = getFirestore(app)
+    const initializeAppCollection = collection(db,'apoiase-clube')
+    const docRef = await addDoc(initializeAppCollection, subscription)
+    return docRef.id
+  }  
+</script>
+  </body>
+</html>
